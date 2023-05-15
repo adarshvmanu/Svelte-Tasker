@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ::placeholder {
+            font-family: 'Google Sans', 'Roboto', Ubuntu, sans-serif;
+        }
+    </style>
+    <title>Svelte</title>
+</head>
+<body style=" background: #F2EAF9;">
+    <div>
+        <div style="color:#50475A;
+            font-size:medium;
+            font-family:'Google Sans','Roboto',Ubuntu,sans-serif;
+            width:90vw;
+            min-width:200px;
+            max-width:600px;
+            min-height:40vh;
+            background-color:#e7d6ff;
+            border-radius:10px;
+            overflow:hidden;
+            margin:0px auto">
+            <div style="box-sizing:border-box;
+            padding:1.5rem;
+            width:550px;
+            max-width:550px;
+            margin:0px auto">
+                <h2>Welcome to Task App!</h2>
+                <p>
+                    Add a new Task Here
+                </p>
+                <p>
+                    
+                </p>
+                <div style="width:486px;text-align:center">
+                    <form action="/add-task" method="post">
+                        <div style="display:flex; flex-direction: column;">
+                            <input type="text" name="task_name" placeholder="Enter task name" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9; ">
+                            <textarea name="task_description" placeholder="Enter task description" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;"></textarea>
+                            <input type="date" name="task_date" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;">
+                            <input type="time" name="task_time" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;">
+                            <button type="submit" style="padding:10px 40px;
+                                outline:none;
+                                border-width:initial;
+                                border-style:none;
+                                border-color:initial;
+                                border-radius:10px;
+                                background-color:#E5B8C4;
+                                color:#50475A;
+                                font-weight:bold;
+                                font-size:medium">
+                                Add Task
+                            </button>
+                        </div>
+                    </form>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

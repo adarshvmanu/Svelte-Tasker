@@ -12,5 +12,10 @@
     <h1>Hey There!</h1><br>
     <p>This is managed by {{ name }}</p>
     {%endblock%}
+    {% if sunny %}
+    <p>It is sunny outside</p>
+    {% else %}
+    <p>It is not sunny outside</p>
+    {% endif %}
 </body>
 </html>

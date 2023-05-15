@@ -20,7 +20,7 @@ class task(db.Model):
 
 @app.route('/')
 def index():
-    return render_template('index.html', name = "Jikuttan")
+    return render_template('index.html', name = "Jikuttan", sunny = True)
 
 @app.route('/tasks')
 def tasks():
