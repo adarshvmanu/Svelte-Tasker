@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
         ::placeholder {
             font-family: 'Google Sans', 'Roboto', Ubuntu, sans-serif;
         }
+
         input[type="date"]::-webkit-calendar-picker-indicator,
         input[type="time"]::-webkit-calendar-picker-indicator {
             filter: grayscale(1) opacity(0.5);
@@ -26,9 +28,10 @@
     </style>
     <title>Svelte</title>
 </head>
+
 <body style="background: #F2EAF9;">
-    <div>
-        <div id="main" style="color:#50475A;
+    <div id="main" style="display: flex; justify-content: center; align-items: center;">
+        <div style="color:#50475A;
             font-size:medium;
             font-family:'Google Sans','Roboto',Ubuntu,sans-serif;
             width:90vw;
@@ -44,20 +47,23 @@
             width:550px;
             max-width:550px;
             margin:0px auto">
-                <h2>Welcome to Task App!</h2>
+                <h1>Welcome to Task App!</h1>
                 <p>
                     Add a new Task Here
                 </p>
                 <p>
-                    
                 </p>
                 <div style="width:486px;text-align:center">
                     <form action="#" method="post">
-                        <div style="display:flex; flex-direction: column;">
-                            <input type="text" name="task_name" placeholder="Enter task name" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9; ">
-                            <textarea name="task_description" placeholder="Enter task description" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;"></textarea>
-                            <input type="date" name="task_date" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;">
-                            <input type="time" name="task_time" style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;">
+                        <div style="display:flex; flex-direction: column; ">
+                            <input type="text" name="task_name" placeholder="Enter task name"
+                                style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9; ">
+                            <textarea rows="8" name="task_description" placeholder="Enter task description"
+                                style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;"></textarea>
+                            <input type="date" name="task_date"
+                                style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;">
+                            <input type="time" name="task_time"
+                                style="margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E5B8C4; background-color: #F2EAF9;">
                             <button type="submit" style="padding:10px 40px;
                                 outline:none;
                                 border-width:initial;
@@ -78,4 +84,5 @@
         </div>
     </div>
 </body>
+
 </html>
