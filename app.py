@@ -15,8 +15,13 @@ class task(db.Model):
     date = db.Column(db.String(10))
     time = db.Column(db.String(5))
 
+with app.app_context():
+    db.create_all()
+    
     def repr(self):
         return f'<task: {self.name}>'
+
+
 
 @app.route('/')
 def index():
